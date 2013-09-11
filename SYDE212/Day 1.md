@@ -15,7 +15,6 @@ Statistics is involved any time when you want to observe the world around you.  
 
 ### Components of Statisical Studies
 
-
 You want to know wether or not surgeons should be playing video games. What should we do?
 
 1. Identify the problem of interest
@@ -31,3 +30,10 @@ You want to know wether or not surgeons should be playing video games. What shou
    * What video game are you going to use?
 
 As we can see, there's a whole lot of stuff we have to do ever before we collect the data. As mentioned before, statistics is not just about collecting and analyzing data. 
+
+Quote from the article:
+"Researchers found that surgeons who played video games immediately before drill complete it an **average of 11 seconds faster** than those who did not."
+
+### Rationale for randomization
+* Those who like video games may have a tendency to be younger surgeons
+  * Younger surgeons may be more or less dexterous
