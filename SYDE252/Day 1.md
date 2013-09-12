@@ -28,11 +28,12 @@ A process for transforming the input signal x(t) into an output signal.
 
 ### Periodic or Aperiodic
 * Signal $f(t)$ is periodic if there exists a positive constant to satisfy $$f(t+To) = f(t) \forall t$$
-  * Example: Sine wave => periodic
-  * dc bias => aperiodic
 * If this is not possible the signal is *aperiodic*
 * Smallest $To$ is also called the *period* of $f(t)$
 * A periodic signal remains unchanged when time shifts integer multiples of the period
+* Examples
+  * A sine wave is *periodic*
+  * DC bias is *aperiodic*
 
 ### Causal vs Non-causal signals
 *Causal* signals are zero for all negative time (space)
@@ -50,13 +51,12 @@ Any signal can be decomposed into an even or odd component
 $$f(t) = f_{e}(t) + f_{0}(t)$$
 $$f(t) = \frac 1 2 (f(t) + f(-t)) + \frac 1 2 (f(t) - f(-t))$$
 
-* First term is even component $f_{e}(t)$, second term is odd component $f_{o}(t)$
+![](https://raw.github.com/vtsatskin/CourseNotes/f7e86133d860e0384ac96b2cbadf2e399ef44029/SYDE252/images/even-odd-decomp.png)
 
+* First term is even component $f_e(t)$, second term is odd component $f_o(t)$
 * Even $f$ x odd $f$ = odd $f$
 * Odd $f$ x odd $f$ = even $f$
 * Even $f$ x even $f$ = even $f$
-
-TODO: Include graphics for this
 
 ### Finite vs Infinite Length Signals
 * Sin wave is an example of an Infinite signal
