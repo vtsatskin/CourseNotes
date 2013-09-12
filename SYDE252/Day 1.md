@@ -1,4 +1,30 @@
+## What is a Signal?
+* Any kind of physical variable subject to variations.
+* Has independent and dependant variables.
+* 1D: Music, Audio (time)
+* 2D: Image (x, y)
+* 3D: Video (x, y, t) (image + time)
+
+## What is a System?
+A process for transforming the input signal x(t) into an output signal.
+
+## Signals as Functions
+1. Continuous functions of real independent variables. 
+  
+  Eg. y = f(x) y = f(x1, x2)
+2. Real valued functions of discrete variables (output only defined for certain values)
+3. Discreate functions of discrete variables (output functions can only have certain variables)
+
 ## Signal Classifications
+
+### Time Classifications
+
+* **Continuous time**: signal is specified for every real value of independent variable
+* **Discrete time**: signal is specified for only discrete values of the independent variable
+
+### Signal Types
+* **Analogue signal**: Amplitude(output, dep. variable) can only take values in a countinous range 
+* **Digital signal**: Can only take values in a finite # of values (quantized). For example 1 or 0 (binary).
 
 ### Periodic or Aperiodic
 * Signal $f(t)$ is periodic if there exists a positive constant to satisfy $$f(t+To) = f(t) \forall t$$
