@@ -74,10 +74,10 @@ $$P_f = \lim_{T \to +\infty} \frac 1 T \int_{-T/2}^{T/2} f^2(t) dt $$
 Signal to Noise Ratio (SNR)
 $$20log_{10}(\sqrt{\frac {P_\text{signal}} {P_\text{noise}}})$$
 
-* A signal w/ finite energy is an **energy signal**
+* Energy Signal: A signal w/ finite energy
   * Amplittude **must** go to 0 as $t \to \infty$
-* A signal w/ finite energy & different from zero power is a power signal
-  * Amplittude must go to 0 as $t \to \infty$
+* Power signal: A signal w/ finite & non-zero power 
+  * Amplittude **must** go to 0 as $t \to \infty$
 
 ### Power signal 
 * The mean of an entity averaged over an infinite interval exists if either the entity is periodic or it has some statistical regularity
