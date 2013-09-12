@@ -31,3 +31,95 @@ $$f(t) = \frac 1 2 (f(t) + f(-t)) + \frac 1 2 (f(t) - f(-t))$$
 * Even $f$ x even $f$ = even $f$
 
 TODO: Include graphics for this
+
+### Finite vs Infinite Length Signals
+* Sin wave is an example of an Infinite signal
+* Real signals are always finite
+
+### Size of the Signal
+* Size = largness or strength.
+* By Energy: area under the curve of the signal.
+
+## Energy & Power
+Signal energy: $$E_f = \int_{-\infty}^{\infty} f^2(t) dt = \int_{-\infty}^{\infty} |f(t)|^2 dt $$
+Power signal: is the time average (mean) of the squared amplitutde signal. 
+$$P_f = \lim_{T \to +\infty} \frac 1 T \int_{-T/2}^{T/2} f^2(t) dt $$
+
+Signal to Noise Ratio (SNR)
+$$20log_{10}(\sqrt{\frac {P_\text{signal}} {P_\text{noise}}})$$
+
+* A signal w/ finite energy is an **energy signal**
+  * Amplittude **must** go to 0 as $t \to \infty$
+* A signal w/ finite energy & different from zero power is a power signal
+  * Amplittude must go to 0 as $t \to \infty$
+
+### Power signal 
+* The mean of an entity averaged over an infinite interval exists if either the entity is periodic or it has some statistical regularity
+* Power signal has infinite energy & an energy signal has zero power.
+* There exists signals that are neither energy nor power signals (e.g. ramp function)
+
+* All practical signals have finite energy & thus are energy signals.
+* Impossible to have infinite duration signal.
+
+### Questions
+* Are all energy signals also power signals? **NO**
+* Are all power signals also energy signals? **NO**
+* Are all signals either energy or power signals? **NO**
+
+## Useful Signal Operations
+
+### Shifting
+* $f(t + T)$: Left shift
+* $f(t - T)$: Right shift
+
+### Time Scaling
+* $f(\alpha t)$: Compression
+* $f(\frac t \alpha)$: Expansion/dilation
+
+### Time Inversion
+* $f(-t)$: Inverts time
+
+## Useful Signals
+
+### Unit step $f^n$
+$$ u(t) = 1, \text{if } t ≥ 0 $$
+$$ u(t) = 0, \text{if } t < 0 $$
+
+### Ramp $f^n$
+$$ r(t, t_0) = 0, \text{if } t < 0 $$
+$$ r(t, t_0) = 0, \text{if } 0 ≤ t ≤ t_0 $$
+$$ r(t, t_0) = 1, \text{if } t > t_0 $$
+
+### Unit Impulse $f^n$
+$$\delta(t) = 0, t ≠ 0$$
+$$\int_{-\infty}^{\infty} \delta(t) dt = 1$$
+
+**Multiplication of a function by an impulse**
+
+$$\phi(t) \delta(t) = \phi(0)\delta(t)$$
+Essentially sampling one point of $\phi(t)$.
+
+**Sampling property**
+$$\int_{-\infty}^{\infty} \phi(t) \delta(t) dt
+=\int_{-\infty}^{\infty} \phi(0) \delta(t) dt
+=\phi(0)  \int_{-\infty}^{\infty} \delta(t) dt
+=\phi(0)$$
+
+$$\int_{-\infty}^{\infty} \phi(t) \delta(t -T) dt =\phi(T)$$
+
+Unit step is the itegral of the unit impulse
+$$\frac {du(t)} {dt} = \delta(t)$$
+
+## Continuous Time Complex
+$$f(t) = Ae^{jwt}$$
+
+### Euler's relations
+Note: j = complex number
+$$Ae^{jwt} = Acost(wt) + j(Asin(wt))$$
+$$cos(wt) = \frac {e^{jwt} + e^{-(jwt)}} {2} $$
+$$sin(wt) = \frac {e^{jwt} - e^{-(jwt)}} {2j} $$
+$$e^{jwt} = cost(wt) + jsin(wt)$$
+* Discrete complex exponential
+$$f[n] = Be^{snT}$$
+$$= Be^{jwnT}$$
+$$k=nT$$
