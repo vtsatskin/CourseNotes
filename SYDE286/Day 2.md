@@ -38,3 +38,12 @@ Note: This discussion is for an iron alloy.
 * Once you're past the elastic region (point $C$), the material will recover to a strain point denoted by the dotted line above.
 * The slope of the line will have the same slope as the linear elastic portion, $E$
 * Loading and unloading in the non-elastic region will follow the line from the point you start unloading, following the slope of $E$, until the stress is 0. Effectively creating a new linear-elastic region. This is called strain hardening.
+
+## Material Types
+**Isotropic materials:** direction independent at a point.
+
+**Anisotropic materials:** direction dependant at a point.
+
+**Homogeneous Matterials:** same properties at every point.
+
+**Non Homogeneous Matterials:** not same properties at every point.
