@@ -68,7 +68,7 @@ $$f(t) = \frac 1 2 (f(t) + f(-t)) + \frac 1 2 (f(t) - f(-t))$$
 
 ## Energy & Power
 Signal energy: $$E_f = \int_{-\infty}^{\infty} f^2(t) dt = \int_{-\infty}^{\infty} |f(t)|^2 dt $$
-Power signal: is the time average (mean) of the squared amplitutde signal. 
+Signal power: is the time average (mean) of the energy.
 $$P_f = \lim_{T \to +\infty} \frac 1 T \int_{-T/2}^{T/2} f^2(t) dt $$
 
 Signal to Noise Ratio (SNR)
