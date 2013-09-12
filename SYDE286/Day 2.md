@@ -8,11 +8,13 @@ Shear Stress = $ \tau = \frac V A $
 
 With every stress there is a corresponding distortion. To characterize the change in length due to a normal stress we use
 
-$$\epsilon = \frac {\Delta L}{L} = \frac {\text{Change in Length}}{\text{Original Length}}$$
+$$\epsilon = \frac {\Delta L}{L} = \frac {\text{Change in Length}}{\text{Original Length}} = \text{Strain}$$
 
 The relationship between $\sigma + \epsilon$ is determined experimentally.
 
 ## Stress and Strain Graph
+Note: This discussion is for an iron alloy.
+
 ![Alt text](http://www.keytometals.com/img/screens/stress_strain_curve.gif)
 
 * Starts at zero, zero stress and strain. Specimin is at original length.
@@ -35,4 +37,4 @@ The relationship between $\sigma + \epsilon$ is determined experimentally.
 
 * Once you're past the elastic region (point $C$), the material will recover to a strain point denoted by the dotted line above.
 * The slope of the line will have the same slope as the linear elastic portion, $E$
-* Loading and unloading in the non-elastic region will follow the . This is called strain hardening.
+* Loading and unloading in the non-elastic region will follow the line from the point you start unloading, following the slope of $E$, until the stress is 0. Effectively creating a new linear-elastic region. This is called strain hardening.
