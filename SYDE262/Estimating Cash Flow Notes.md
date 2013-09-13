@@ -7,8 +7,6 @@
   * Labour costs, more activity, more required.
 * **Marginal**: Variable cost of one more unit
 * **Average**: Total cost/number of units
-* Sunk:
-* Opportunity:
 
 ## Types of Estimates
 * **Rough**: Used for high-level planning. Little detail or accuracy. -30% to 60% accuracy.
@@ -44,3 +42,5 @@ Cost indexes are published by private and public sources. Cost indexes are publi
 $$\frac {\text{Cost at Time A}} {\text{Cost at Time B}} = \frac {\text{Cost Index at Time A}} {\text{Cost Index at Time B}} $$
 
 ### Power-Sizing Model
+Allows for calculations of equipment opperating at economies of scale. Where $x$ is the power-sizing exponent. $x$ is usually found in calculated tables.
+$$\frac {\text{Cost of Equipment A}} {\text{Cost of Equipment B}} = (\frac {\text{Size of A}} {\text{Size of B}})^x $$
