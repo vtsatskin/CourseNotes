@@ -28,11 +28,12 @@ A process for transforming the input signal x(t) into an output signal.
 
 ### Periodic or Aperiodic
 * Signal $f(t)$ is periodic if there exists a positive constant to satisfy $$f(t+To) = f(t) \forall t$$
-  * Example: Sine wave => periodic
-  * dc bias => aperiodic
 * If this is not possible the signal is *aperiodic*
 * Smallest $To$ is also called the *period* of $f(t)$
 * A periodic signal remains unchanged when time shifts integer multiples of the period
+* Examples
+  * A sine wave is *periodic*
+  * DC bias is *aperiodic*
 
 ### Causal vs Non-causal signals
 *Causal* signals are zero for all negative time (space)
@@ -50,13 +51,12 @@ Any signal can be decomposed into an even or odd component
 $$f(t) = f_{e}(t) + f_{0}(t)$$
 $$f(t) = \frac 1 2 (f(t) + f(-t)) + \frac 1 2 (f(t) - f(-t))$$
 
-* First term is even component $f_{e}(t)$, second term is odd component $f_{o}(t)$
+![](https://raw.github.com/vtsatskin/CourseNotes/f7e86133d860e0384ac96b2cbadf2e399ef44029/SYDE252/images/even-odd-decomp.png)
 
+* First term is even component $f_e(t)$, second term is odd component $f_o(t)$
 * Even $f$ x odd $f$ = odd $f$
 * Odd $f$ x odd $f$ = even $f$
 * Even $f$ x even $f$ = even $f$
-
-TODO: Include graphics for this
 
 ### Finite vs Infinite Length Signals
 * Sin wave is an example of an Infinite signal
@@ -68,16 +68,16 @@ TODO: Include graphics for this
 
 ## Energy & Power
 Signal energy: $$E_f = \int_{-\infty}^{\infty} f^2(t) dt = \int_{-\infty}^{\infty} |f(t)|^2 dt $$
-Power signal: is the time average (mean) of the squared amplitutde signal. 
+Signal power: is the time average (mean) of the energy.
 $$P_f = \lim_{T \to +\infty} \frac 1 T \int_{-T/2}^{T/2} f^2(t) dt $$
 
 Signal to Noise Ratio (SNR)
 $$20log_{10}(\sqrt{\frac {P_\text{signal}} {P_\text{noise}}})$$
 
-* A signal w/ finite energy is an **energy signal**
+* Energy Signal: A signal w/ finite energy
   * Amplittude **must** go to 0 as $t \to \infty$
-* A signal w/ finite energy & different from zero power is a power signal
-  * Amplittude must go to 0 as $t \to \infty$
+* Power signal: A signal w/ finite & non-zero power 
+  * Amplittude **must** go to 0 as $t \to \infty$
 
 ### Power signal 
 * The mean of an entity averaged over an infinite interval exists if either the entity is periodic or it has some statistical regularity
